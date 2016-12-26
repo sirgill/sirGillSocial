@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F61B4F46F8AE037007A7324A /* Pods_sirGillSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E9E11D1520856FEFA1F71E /* Pods_sirGillSocial.framework */; };
+		FE2914BC1E1024F800593C44 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2914BB1E1024F800593C44 /* FancyView.swift */; };
+		FE2914BF1E10259800593C44 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2914BE1E10259800593C44 /* Constants.swift */; };
+		FE2914C11E10290800593C44 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2914C01E10290800593C44 /* RoundBtn.swift */; };
+		FE2914C31E102EFC00593C44 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2914C21E102EFC00593C44 /* FancyField.swift */; };
+		FE2914C51E10317000593C44 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2914C41E10317000593C44 /* FancyBtn.swift */; };
+		FEC9C1F31E0F44D800F131EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9C1F21E0F44D800F131EA /* AppDelegate.swift */; };
+		FEC9C1F51E0F44D800F131EA /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9C1F41E0F44D800F131EA /* SignInVC.swift */; };
+		FEC9C1F81E0F44D800F131EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC9C1F61E0F44D800F131EA /* Main.storyboard */; };
+		FEC9C1FA1E0F44D800F131EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC9C1F91E0F44D800F131EA /* Assets.xcassets */; };
+		FEC9C1FD1E0F44D800F131EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC9C1FB1E0F44D800F131EA /* LaunchScreen.storyboard */; };
+		FEC9C2051E0F45C000F131EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEC9C2041E0F45C000F131EA /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69273621B662F8A93739AC94 /* Pods-sirGillSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sirGillSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-sirGillSocial/Pods-sirGillSocial.release.xcconfig"; sourceTree = "<group>"; };
+		D3E9E11D1520856FEFA1F71E /* Pods_sirGillSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sirGillSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAE309A80490B85DB911853 /* Pods-sirGillSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sirGillSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sirGillSocial/Pods-sirGillSocial.debug.xcconfig"; sourceTree = "<group>"; };
+		FE2914BB1E1024F800593C44 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		FE2914BE1E10259800593C44 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FE2914C01E10290800593C44 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		FE2914C21E102EFC00593C44 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		FE2914C41E10317000593C44 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		FEC9C1EF1E0F44D800F131EA /* sirGillSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sirGillSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC9C1F21E0F44D800F131EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEC9C1F41E0F44D800F131EA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		FEC9C1F71E0F44D800F131EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEC9C1F91E0F44D800F131EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEC9C1FC1E0F44D800F131EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEC9C1FE1E0F44D800F131EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC9C2041E0F45C000F131EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEC9C1EC1E0F44D800F131EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F61B4F46F8AE037007A7324A /* Pods_sirGillSocial.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C502A82B0C8E8908EFB82DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3E9E11D1520856FEFA1F71E /* Pods_sirGillSocial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A486C985CD289333A985D430 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEAE309A80490B85DB911853 /* Pods-sirGillSocial.debug.xcconfig */,
+				69273621B662F8A93739AC94 /* Pods-sirGillSocial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE2914B71E0F49C800593C44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FE2914B91E0F49EF00593C44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE2914BB1E1024F800593C44 /* FancyView.swift */,
+				FE2914C01E10290800593C44 /* RoundBtn.swift */,
+				FE2914C21E102EFC00593C44 /* FancyField.swift */,
+				FE2914C41E10317000593C44 /* FancyBtn.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FE2914BA1E0F49FB00593C44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEC9C1F41E0F44D800F131EA /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FE2914BD1E10257100593C44 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FE2914BE1E10259800593C44 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		FEC9C1E61E0F44D800F131EA = {
+			isa = PBXGroup;
+			children = (
+				FEC9C1F11E0F44D800F131EA /* sirGillSocial */,
+				FEC9C1F01E0F44D800F131EA /* Products */,
+				A486C985CD289333A985D430 /* Pods */,
+				5C502A82B0C8E8908EFB82DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEC9C1F01E0F44D800F131EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEC9C1EF1E0F44D800F131EA /* sirGillSocial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEC9C1F11E0F44D800F131EA /* sirGillSocial */ = {
+			isa = PBXGroup;
+			children = (
+				FE2914BD1E10257100593C44 /* Util */,
+				FE2914B71E0F49C800593C44 /* Model */,
+				FE2914BA1E0F49FB00593C44 /* Controller */,
+				FE2914B91E0F49EF00593C44 /* View */,
+				FEC9C1F21E0F44D800F131EA /* AppDelegate.swift */,
+				FEC9C1F61E0F44D800F131EA /* Main.storyboard */,
+				FEC9C1F91E0F44D800F131EA /* Assets.xcassets */,
+				FEC9C1FB1E0F44D800F131EA /* LaunchScreen.storyboard */,
+				FEC9C1FE1E0F44D800F131EA /* Info.plist */,
+				FEC9C2041E0F45C000F131EA /* GoogleService-Info.plist */,
+			);
+			path = sirGillSocial;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEC9C1EE1E0F44D800F131EA /* sirGillSocial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC9C2011E0F44D800F131EA /* Build configuration list for PBXNativeTarget "sirGillSocial" */;
+			buildPhases = (
+				BBAC2C5CD179F7E26CBD7423 /* [CP] Check Pods Manifest.lock */,
+				FEC9C1EB1E0F44D800F131EA /* Sources */,
+				FEC9C1EC1E0F44D800F131EA /* Frameworks */,
+				FEC9C1ED1E0F44D800F131EA /* Resources */,
+				43B9031725689B10C586019D /* [CP] Embed Pods Frameworks */,
+				7216648679648763D02CD8D5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sirGillSocial;
+			productName = sirGillSocial;
+			productReference = FEC9C1EF1E0F44D800F131EA /* sirGillSocial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEC9C1E71E0F44D800F131EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Surinder Singh Gill";
+				TargetAttributes = {
+					FEC9C1EE1E0F44D800F131EA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FEC9C1EA1E0F44D800F131EA /* Build configuration list for PBXProject "sirGillSocial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEC9C1E61E0F44D800F131EA;
+			productRefGroup = FEC9C1F01E0F44D800F131EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEC9C1EE1E0F44D800F131EA /* sirGillSocial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEC9C1ED1E0F44D800F131EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC9C1FD1E0F44D800F131EA /* LaunchScreen.storyboard in Resources */,
+				FEC9C2051E0F45C000F131EA /* GoogleService-Info.plist in Resources */,
+				FEC9C1FA1E0F44D800F131EA /* Assets.xcassets in Resources */,
+				FEC9C1F81E0F44D800F131EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43B9031725689B10C586019D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sirGillSocial/Pods-sirGillSocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7216648679648763D02CD8D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sirGillSocial/Pods-sirGillSocial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBAC2C5CD179F7E26CBD7423 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEC9C1EB1E0F44D800F131EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2914C31E102EFC00593C44 /* FancyField.swift in Sources */,
+				FEC9C1F51E0F44D800F131EA /* SignInVC.swift in Sources */,
+				FE2914C11E10290800593C44 /* RoundBtn.swift in Sources */,
+				FEC9C1F31E0F44D800F131EA /* AppDelegate.swift in Sources */,
+				FE2914BC1E1024F800593C44 /* FancyView.swift in Sources */,
+				FE2914BF1E10259800593C44 /* Constants.swift in Sources */,
+				FE2914C51E10317000593C44 /* FancyBtn.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEC9C1F61E0F44D800F131EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEC9C1F71E0F44D800F131EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEC9C1FB1E0F44D800F131EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEC9C1FC1E0F44D800F131EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEC9C1FF1E0F44D800F131EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEC9C2001E0F44D800F131EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEC9C2021E0F44D800F131EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEAE309A80490B85DB911853 /* Pods-sirGillSocial.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = sirGillSocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gills.sirGillSocial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FEC9C2031E0F44D800F131EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69273621B662F8A93739AC94 /* Pods-sirGillSocial.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = sirGillSocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gills.sirGillSocial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEC9C1EA1E0F44D800F131EA /* Build configuration list for PBXProject "sirGillSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC9C1FF1E0F44D800F131EA /* Debug */,
+				FEC9C2001E0F44D800F131EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC9C2011E0F44D800F131EA /* Build configuration list for PBXNativeTarget "sirGillSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC9C2021E0F44D800F131EA /* Debug */,
+				FEC9C2031E0F44D800F131EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEC9C1E71E0F44D800F131EA /* Project object */;
+}

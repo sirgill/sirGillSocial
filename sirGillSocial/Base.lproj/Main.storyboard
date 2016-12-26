@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SignInVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="SignInVC" customClass="SignInVC" customModule="sirGillSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHP-2v-pFg" customClass="FancyView" customModule="sirGillSocial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="177"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.38431372549019605" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="2aU-V2-SWT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HC4-Xh-dmJ">
+                                <rect key="frame" x="0.0" y="574" width="375" height="93"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.38431372549019605" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="yI4-Je-FY5"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Account? Account will be created for You" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjD-qB-rBH">
+                                <rect key="frame" x="10" y="584" width="349" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUx-FW-vQf" customClass="RoundBtn" customModule="sirGillSocial" customModuleProvider="target">
+                                <rect key="frame" x="126" y="231" width="122" height="87"/>
+                                <color key="backgroundColor" red="0.21773844957351685" green="0.33109021186828613" blue="0.58426374197006226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EmP-qm-yg7"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7gq-LC-PbV">
+                                <rect key="frame" x="46" y="364" width="283" height="90"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rGx-4C-xlb" customClass="FancyField" customModule="sirGillSocial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wGk-it-Ak2" customClass="FancyField" customModule="sirGillSocial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="30" width="283" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBO-BO-keH" customClass="FancyBtn" customModule="sirGillSocial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="283" height="30"/>
+                                        <color key="backgroundColor" red="0.94117647058823528" green="0.38431372549019605" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.86742344798657722" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hPB-gM-VAt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NB9-iN-yl0">
+                                <rect key="frame" x="16" y="185" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nyP-WH-ceH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FjD-qB-rBH" secondAttribute="bottom" constant="8" id="2lA-zo-eIb"/>
+                            <constraint firstItem="7gq-LC-PbV" firstAttribute="top" secondItem="PUx-FW-vQf" secondAttribute="bottom" constant="46" id="3ID-Jy-zWd"/>
+                            <constraint firstAttribute="trailing" secondItem="HC4-Xh-dmJ" secondAttribute="trailing" id="6Vp-su-j4g"/>
+                            <constraint firstItem="NB9-iN-yl0" firstAttribute="top" secondItem="YHP-2v-pFg" secondAttribute="bottom" constant="8" id="74U-Qe-icD"/>
+                            <constraint firstItem="7gq-LC-PbV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="9xW-P1-gps"/>
+                            <constraint firstItem="7gq-LC-PbV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EqS-U0-r6s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PUx-FW-vQf" secondAttribute="trailing" constant="111" id="H9p-oD-D1I"/>
+                            <constraint firstItem="YHP-2v-pFg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L7w-lf-lqq"/>
+                            <constraint firstItem="PUx-FW-vQf" firstAttribute="top" secondItem="NB9-iN-yl0" secondAttribute="bottom" constant="25" id="LdE-i9-VtS"/>
+                            <constraint firstItem="FjD-qB-rBH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="MXr-k2-dXT"/>
+                            <constraint firstItem="FjD-qB-rBH" firstAttribute="top" secondItem="NB9-iN-yl0" secondAttribute="bottom" constant="378" id="UVV-VD-IIy"/>
+                            <constraint firstItem="YHP-2v-pFg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Uvd-pr-wSq"/>
+                            <constraint firstAttribute="trailing" secondItem="YHP-2v-pFg" secondAttribute="trailing" id="bYE-2H-64W"/>
+                            <constraint firstItem="HC4-Xh-dmJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bnR-rk-MVj"/>
+                            <constraint firstItem="NB9-iN-yl0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eYB-73-ptm"/>
+                            <constraint firstItem="NB9-iN-yl0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fSu-w6-7OH"/>
+                            <constraint firstItem="PUx-FW-vQf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110" id="jQQ-Oq-mXF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7gq-LC-PbV" secondAttribute="trailing" constant="30" id="p5d-IO-esm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HC4-Xh-dmJ" secondAttribute="bottom" id="sUB-Uc-pNt"/>
+                            <constraint firstAttribute="trailing" secondItem="FjD-qB-rBH" secondAttribute="trailing" constant="16" id="wu8-e7-sa5"/>
+                            <constraint firstItem="HC4-Xh-dmJ" firstAttribute="top" secondItem="PUx-FW-vQf" secondAttribute="bottom" constant="256" id="xzn-hN-N7z"/>
+                            <constraint firstItem="HC4-Xh-dmJ" firstAttribute="top" secondItem="7gq-LC-PbV" secondAttribute="bottom" constant="120" id="zlW-wU-bzQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="rGx-4C-xlb" id="ti6-CF-wFP"/>
+                        <outlet property="pwdField" destination="wGk-it-Ak2" id="daF-aT-JqG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="f" width="352" height="328"/>
+    </resources>
+</document>
