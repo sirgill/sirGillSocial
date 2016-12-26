@@ -138,12 +138,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvB-qM-148" customClass="FancyView" customModule="sirGillSocial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="IGL-C1-IBA">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="IGL-C1-IBA">
                                         <rect key="frame" x="8" y="13" width="54" height="45"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="54" id="9PG-NZ-dbS"/>
                                             <constraint firstAttribute="height" constant="45" id="Hts-Mm-bVZ"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="uxi-QL-ffq" appends="YES" id="iqL-Vp-NNf"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lax-oS-mEO">
                                         <rect key="frame" x="145" y="19" width="112" height="32"/>
@@ -207,7 +211,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="355" id="dz8-J5-JhZ" customClass="PostCell" customModule="sirGillSocial" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="355"/>
+                                        <rect key="frame" x="0.0" y="28" width="374" height="355"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dz8-J5-JhZ" id="NjS-3h-Xy7">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="355"/>
@@ -328,13 +332,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="odc-9M-BTR" id="gU6-2q-n0E"/>
+                        <outlet property="tableView" destination="odc-9M-BTR" id="KpY-e8-IMg"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="WQB-Ll-rP8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEG-R9-H11" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uxi-QL-ffq"/>
             </objects>
-            <point key="canvasLocation" x="780" y="137.18140929535232"/>
+            <point key="canvasLocation" x="910" y="137"/>
         </scene>
     </scenes>
     <resources>
