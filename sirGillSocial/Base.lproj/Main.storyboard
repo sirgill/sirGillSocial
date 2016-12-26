@@ -337,7 +337,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEG-R9-H11" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="uxi-QL-ffq"/>
+                <tapGestureRecognizer id="uxi-QL-ffq">
+                    <connections>
+                        <action selector="signOutTapped:" destination="X2V-nV-bJ5" id="4MO-2y-4tk"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="910" y="137"/>
         </scene>
