@@ -156,7 +156,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     
     @IBAction func signOutTapped(_ sender: AnyObject) {
-        let keychainResult = KeychainWrapper.standard.string(forKey:KEY_UID)
+        let keychainResult = KeychainWrapper.standard.remove(key:KEY_UID)
         print("Gill: Id removed form keychain \(keychainResult)")
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier:  "goToSignIn", sender: nil)
