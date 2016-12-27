@@ -18,6 +18,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     @IBOutlet weak var captionField: FancyField!
     
+    @IBOutlet weak var likeImg: UIImageView!
+    
+    
+    
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
@@ -70,11 +74,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             
             if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
                 cell.configureCell(post: post, img: img)
-                return cell
+                
             } else {
                 cell.configureCell(post: post)
-                return cell
+                
             }
+            return cell
             } else {
             return PostCell()
         }
@@ -156,7 +161,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     
     @IBAction func signOutTapped(_ sender: AnyObject) {
-        let keychainResult = KeychainWrapper.standard.remove(key:KEY_UID)
+        let keychainResult = KeychainWrapper.standard.removeObject(forKey:KEY_UID)
         print("Gill: Id removed form keychain \(keychainResult)")
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier:  "goToSignIn", sender: nil)

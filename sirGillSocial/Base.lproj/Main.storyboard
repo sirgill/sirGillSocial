@@ -218,7 +218,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="355" id="dz8-J5-JhZ" customClass="PostCell" customModule="sirGillSocial" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="355"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="355"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dz8-J5-JhZ" id="NjS-3h-Xy7">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="355"/>
@@ -286,7 +286,7 @@
                                                     </constraints>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="g7B-Sw-khR">
-                                                    <rect key="frame" x="265.5" y="322" width="85.5" height="25"/>
+                                                    <rect key="frame" x="266" y="322" width="85" height="25"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8t-0r-qqw">
                                                             <rect key="frame" x="0.0" y="0.0" width="40" height="25"/>
@@ -294,8 +294,8 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87324349832214765" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIr-qZ-WU6">
-                                                            <rect key="frame" x="45" y="0.0" width="40.5" height="25"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIr-qZ-WU6">
+                                                            <rect key="frame" x="45" y="0.0" width="40" height="25"/>
                                                             <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="18"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54320469800000004" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -315,6 +315,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="fY3-fU-W9h" id="mKO-bJ-ZhD"/>
+                                            <outlet property="likeImg" destination="WJR-nK-92o" id="bXE-yX-JWS"/>
                                             <outlet property="likesLbl" destination="e8t-0r-qqw" id="0pT-0O-PP4"/>
                                             <outlet property="postImg" destination="0V9-Uu-7Cs" id="Xvh-0C-udJ"/>
                                             <outlet property="profileImg" destination="5Fl-TV-MjM" id="O46-e5-nK5"/>
