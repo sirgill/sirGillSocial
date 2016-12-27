@@ -10,6 +10,7 @@ You need Xcode to run the project, if you have Xcode all you need to do is downl
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
 ## History
 This was a pratice project made with the help of a Udemy Course. 
 </snippet>
