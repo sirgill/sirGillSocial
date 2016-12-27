@@ -173,9 +173,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AM4-KN-2d0">
                                         <rect key="frame" x="8" y="4" width="327" height="55"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="MD2-OL-Dzm" customClass="CircleView" customModule="sirGillSocial" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="MD2-OL-Dzm" customClass="CircleView" customModule="sirGillSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="72" height="55"/>
                                                 <color key="backgroundColor" red="0.96118205785751343" green="0.48377817869186401" blue="0.63794374465942383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="8nA-rg-lcb" appends="YES" id="UPc-vv-VRs"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Whats New?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pin-TW-YIH" customClass="FancyField" customModule="sirGillSocial" customModuleProvider="target">
                                                 <rect key="frame" x="82" y="0.0" width="190" height="55"/>
@@ -332,6 +336,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="MD2-OL-Dzm" id="dWx-IO-Taa"/>
                         <outlet property="tableView" destination="odc-9M-BTR" id="KpY-e8-IMg"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="WQB-Ll-rP8"/>
                     </connections>
@@ -340,6 +345,11 @@
                 <tapGestureRecognizer id="uxi-QL-ffq">
                     <connections>
                         <action selector="signOutTapped:" destination="X2V-nV-bJ5" id="4MO-2y-4tk"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8nA-rg-lcb">
+                    <connections>
+                        <action selector="addimageTapped:" destination="X2V-nV-bJ5" id="9iq-fH-M7b"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
