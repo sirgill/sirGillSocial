@@ -40,6 +40,7 @@
 		FE7A93F41E11904000FD6F18 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		FE7A93F71E11B68600FD6F18 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		FE7A93F91E11E1B000FD6F18 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FE7A93FB1E12262700FD6F18 /* sirGillSocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sirGillSocial.entitlements; sourceTree = "<group>"; };
 		FEC9C1EF1E0F44D800F131EA /* sirGillSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sirGillSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC9C1F21E0F44D800F131EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEC9C1F41E0F44D800F131EA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 		FEC9C1F11E0F44D800F131EA /* sirGillSocial */ = {
 			isa = PBXGroup;
 			children = (
+				FE7A93FB1E12262700FD6F18 /* sirGillSocial.entitlements */,
 				FE7A93F61E11B66C00FD6F18 /* Services */,
 				FE2914BD1E10257100593C44 /* Util */,
 				FE2914B71E0F49C800593C44 /* Model */,
@@ -196,7 +198,13 @@
 				TargetAttributes = {
 					FEC9C1EE1E0F44D800F131EA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZWT2GG6B87;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -419,6 +427,8 @@
 			baseConfigurationReference = DEAE309A80490B85DB911853 /* Pods-sirGillSocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sirGillSocial/sirGillSocial.entitlements;
+				DEVELOPMENT_TEAM = ZWT2GG6B87;
 				INFOPLIST_FILE = sirGillSocial/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -433,6 +443,8 @@
 			baseConfigurationReference = 69273621B662F8A93739AC94 /* Pods-sirGillSocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sirGillSocial/sirGillSocial.entitlements;
+				DEVELOPMENT_TEAM = ZWT2GG6B87;
 				INFOPLIST_FILE = sirGillSocial/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
