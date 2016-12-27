@@ -27,14 +27,14 @@ class SignInVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID){
-            print("JESS: ID found in keychain")
+            print("Gill: ID found in keychain")
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
     }
 
     
 
-    @IBAction func facebookBtnTapped(_ sender: Any) {
+    @IBAction func facebookBtnTapped(_ sender: AnyObject) {
         
         let facebookLogin = FBSDKLoginManager()
         
@@ -68,7 +68,7 @@ class SignInVC: UIViewController {
         
     }
     
-    @IBAction func signInTapped(_ sender: Any) {
+    @IBAction func signInTapped(_ sender: AnyObject) {
         if let email = emailField.text, let pwd = pwdField.text {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
                 if error == nil {
